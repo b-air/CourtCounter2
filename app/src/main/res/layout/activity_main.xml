@@ -19,13 +19,14 @@
             android:orientation="vertical"
             tools:context="com.example.android.courtcounter2.MainActivity">
 
-            <TextView
-                style="@style/TextViews"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_horizontal"
-                android:text="Team A" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/broncos"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -41,18 +42,15 @@
                 style="@style/Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:onClick="add3PointsA"
-                android:text="+3 POINTS" />
+                android:onClick="add6A"
+                android:text="TOUCHDOWN" />
 
             <Button
                 style="@style/Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="add2PointsA"
+                android:onClick="add2A"
                 android:text="+2 POINTS" />
 
             <Button
@@ -60,9 +58,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="add1PointsA"
+                android:onClick="add1A"
                 android:text="+1 POINTS" />
+
+            <Button
+                style="@style/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="add3A"
+                android:text="FIELD GOAL" />
+
+            <Button
+                style="@style/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="add2A"
+                android:text="SAFETY" />
 
         </LinearLayout>
 
@@ -101,18 +115,15 @@
                 style="@style/Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:onClick="add3PointsB"
-                android:text="+3 POINTS" />
+                android:onClick="add6B"
+                android:text="TOUCHDOWN" />
 
             <Button
                 style="@style/Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="add2PointsB"
+                android:onClick="add2B"
                 android:text="+2 POINTS" />
 
             <Button
@@ -120,9 +131,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="add1PointsB"
+                android:onClick="add1B"
                 android:text="+1 POINTS" />
+
+            <Button
+                style="@style/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="add3B"
+                android:text="FIELD GOAL" />
+
+            <Button
+                style="@style/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="add2B"
+                android:text="SAFETY" />
 
         </LinearLayout>
 
@@ -135,6 +162,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:onClick="reset"
+        android:textColor="@color/colorAccent"
         android:text="RESET" />
 
 

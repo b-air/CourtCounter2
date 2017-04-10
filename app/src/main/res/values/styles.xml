@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimary">#ff5900</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#FF9800</item>
+        <item name="colorButtonNormal">#143d96</item>
     </style>
 
     <style name="TextViews" parent="@style/AppTheme">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textColor">#616161</item>
+        <item name="android:textColor">#ff5500</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:paddingBottom">16dp</item>
     </style>
@@ -25,8 +25,10 @@
 
     <style name="Btn" parent="@style/AppTheme">
         <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginLeft">24dp</item>
+
+        <item name="android:textColor">#ffffff</item>
 
     </style>
 </resources>
