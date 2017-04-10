@@ -20,21 +20,28 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team A.
      */
+
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void add3PointsA(View view){
+    public void add6A (View view){
+        scoreTeamA = scoreTeamA + 6;
+        displayForTeamA(scoreTeamA);
+    }
+
+    public void add3A(View view){
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
-    public void add2PointsA(View view){
+    public void add2A(View view){
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
-    public void add1PointsA(View view){
+
+    public void add1A(View view){
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
@@ -42,21 +49,28 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team B.
      */
+
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void add3PointsB(View view){
+    public void add6B (View view){
+        scoreTeamB = scoreTeamB + 6;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void add3B(View view){
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
-    public void add2PointsB(View view){
+    public void add2B(View view){
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
-    public void add1PointsB(View view){
+
+    public void add1B(View view){
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
@@ -64,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  Reset
      */
+
     public void reset(View view){
         scoreTeamA = 0;
         scoreTeamB = 0;
@@ -71,3 +86,5 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 }
+
+
